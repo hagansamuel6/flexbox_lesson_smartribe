@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+        .container {
+            width: 800px;
+            height: 150px;
+            background-color: violet;
+            display: flex;
+            
+          
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: space-between; */
+        }
+
+        .item {
+            width:  200px;
+            height: 100px;
+            background-color: orange;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .box-3 {
+            background-color: black;
+        }
+
+        .box-8 {
+            background-color: blue;
+        }
+
+        .navigation {
+            background-color: pink;
+            height: 60px;
+            width: 100%;
+            margin-bottom: 50px;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-items { 
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-items li {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <h3>Logo</h3>
+        
+        <div>
+            <ul class="menu-items">
+                <li>Home</li>
+                <li>shop</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="item">
+            item 1
+        </div>
+
+        <div class="item">
+            item 2
+        </div>
+
+        <div class="item box-3">
+            item 3
+        </div>
+
+    </div>
+</body>
+</html>
